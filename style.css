@@ -1,7 +1,6 @@
 /*Navigation Bar*/
 .container {
   max-width: 900px;
-  margin: 0 auto; 
 }
 
 .header{
@@ -20,12 +19,12 @@
 
 .header--navigation--logo {
 display: flex;
-justify-content: float-left;
+justify-content: flex-start;
 }
 
 .header--navigation--list ul {
   display: flex;
-  justify-content: float-right;
+  justify-content: flex-end;
   gap: 3rem;
   list-style-type: none;
   margin: 0px;
