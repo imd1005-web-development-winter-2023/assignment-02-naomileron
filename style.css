@@ -79,12 +79,12 @@ font-size: 7rem;
   font-size: 3rem;
 }
 
-.hero--button {
+/*.hero--button {
   display:flex;
-  width: 25%;
+  margin-top:20px;
+  width: 50%;
   height: 300px;
-  background-color: red;
-}
+}*/
 
 .learn--more--hero {
   height: 60px;
@@ -99,6 +99,8 @@ font-size: 7rem;
 .learn--more--hero a:hover {
   background-color: gray;
 }
+
+/*Ratings Section*/
 
 .Ratings--section {
   display: flex;
