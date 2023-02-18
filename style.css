@@ -10,7 +10,7 @@
 }
 
 .navigation {
-  margin: 0;
+  margin: 0 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
