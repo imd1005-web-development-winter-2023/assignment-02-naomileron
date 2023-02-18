@@ -1,25 +1,21 @@
 /*Navigation Bar*/
-.header {
-  width: 100%;
-  height: 90px;
+.container {
+  max-width: 900px;
   margin: 0px;
-  background-color: black;
 }
 
-.container{
-  width: 100%;
-  height:100%;
-  background-color:red;
+.header{
+  background-color:black;
   color: white;
 }
 
 .navigation {
-  margin-left: 0em;
-  margin-right: 0em;
+  margin: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header--navigation--logo {
