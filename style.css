@@ -47,6 +47,7 @@ justify-content: flex-start;
 .Hero--Section {
   max-width: 900px;
   max-height: 700px;
+  background-color: red;
 }
 
 .Hero--content {
