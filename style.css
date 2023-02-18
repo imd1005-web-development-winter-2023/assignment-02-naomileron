@@ -45,8 +45,11 @@ justify-content: flex-start;
 
 /*Hero Section*/
 .Hero--Section {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 900px;
+  max-height: 700px;
+}
+
+.Hero--content {
   background-image: url('./images/Hero\ Section\ Image.png');
   background-repeat: no-repeat;
   color: white;
