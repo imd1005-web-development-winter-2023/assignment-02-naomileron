@@ -1,5 +1,5 @@
 .container {
-  max-width: 500px;
+  max-width: 900px;
   margin: 0 auto; 
 }
 
@@ -8,12 +8,26 @@
   color: white;
 }
 
-.navigation{
+.navigation {
   margin: 0 2rem;
-  padding: 3rem 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.header--navigation--list ul {
+  display: flex;
+  gap: 3rem;
+  list-style-type:none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header--navigation--list ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Gill Sans';
 }
