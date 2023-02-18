@@ -17,8 +17,14 @@
   align-items: center;
 }
 
+.header--navigation--logo {
+display: flex;
+justify-content: flex-start;
+}
+
 .header--navigation--list ul {
   display: flex;
+  justify-content: flex-end;
   gap: 3rem;
   list-style-type: none;
   margin: 0px;
