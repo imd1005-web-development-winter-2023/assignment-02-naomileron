@@ -26,6 +26,8 @@ justify-content: flex-start;
 .header--navigation--list ul {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  right: 40em;
   gap: 3rem;
   list-style-type: none;
   margin: 0px;
