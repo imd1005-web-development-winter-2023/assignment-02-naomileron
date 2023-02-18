@@ -49,3 +49,8 @@ justify-content: flex-start;
   background-repeat: no-repeat;
   color: white;
 }
+
+.h1 {
+  font-family: Georgia;
+  text-transform: uppercase;
+}
