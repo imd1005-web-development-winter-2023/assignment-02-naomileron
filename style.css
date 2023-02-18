@@ -1,6 +1,7 @@
 /*Navigation Bar*/
 .container {
   max-width: 900px;
+  margin: 0 0;
 }
 
 .header{
