@@ -86,7 +86,8 @@ font-size: 7rem;
   height: 300px;
 }*/
 
-.learn--more--hero {
+.white--button {
+  margin-top: 10px;
   height: 60px;
   width: 250px;
   background-color: white;
@@ -96,7 +97,7 @@ font-size: 7rem;
   font-size: 1.5rem;
 }
 
-.learn--more--hero a:hover {
+.white--button a:hover {
   background-color: gray;
 }
 
@@ -187,11 +188,14 @@ font-size: 7rem;
   display:flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
   margin-top: 100px;
   margin-left: 265px;
   width: 65%;
   height: 75%;
-  background-color:red; 
+  text-align: center;
+  /*background-color:red;*/ 
 }
 
 .bts--title {
@@ -207,6 +211,7 @@ font-size: 7rem;
   font-size: 1.5rem;
   color: white
 }
+
 
 /*Screen reader only, based on example shown in class*/
 .sr-only {
