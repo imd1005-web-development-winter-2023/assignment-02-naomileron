@@ -125,24 +125,29 @@ font-size: 7rem;
   width: 100%;
   height:60%;
   background-color:darkgreen;
+
   list-style-type: none;
 }
 
 .ratings ul {
   display: flex;
-  justify-content:space-around;
   flex-direction: row;
+  justify-content: center;
   gap: 3rem;
   list-style-type: none;
 }
 
 .ratings ul li {
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   flex-direction: row;
   color: white;
   font-family:'Segoe UI';
   text-align: center;
+}
+
+.rating--bubble {
+  background-color:
 }
 
 /*Watch Section*/
