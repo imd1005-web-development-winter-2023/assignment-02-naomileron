@@ -162,6 +162,11 @@ font-size: 7rem;
   color: white
 }
 
+.Posters ul {
+  display:flex;
+  flex-direction: row;
+}
+
 /*Screen reader only, based on example shown in class*/
 .sr-only {
   position: absolute;
