@@ -181,14 +181,31 @@ font-size: 7rem;
   background-image: url('./images/Behind\ the\ Scenes.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  filter: blur(2px);
 }
 
 .bts-text {
   display:flex;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 265px;
+  width: 65%;
   height: 75%;
-  background-color:red;
+  background-color:red; 
+}
+
+.bts--title {
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 4rem;
+  color: white
+}
+
+.subtitle {
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: white
 }
 
 /*Screen reader only, based on example shown in class*/
