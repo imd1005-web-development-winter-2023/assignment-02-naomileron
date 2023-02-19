@@ -241,6 +241,7 @@ font-size: 7rem;
   display: flex;
   height: 100%;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 
