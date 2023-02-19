@@ -28,6 +28,8 @@ easier to read. */
 .header--navigation--logo {
 display: flex;
 justify-content: flex-start;
+margin-top: 10px;
+margin-left: 20px;
 }
 
 .header--navigation--list ul {
@@ -368,7 +370,7 @@ font-size: 7rem;
   display: flex;
   width: 100%;
   height: 600px;
-  background-color: blue;  
+  background-color: white;  
   padding-left: 40px;
   padding-right: 65px;
   padding-top: 50px;
@@ -380,7 +382,7 @@ font-size: 7rem;
   display: flex;
   width: 90%;
   height: 98%;
-  background-color: yellow;
+  background-color: black;
   flex-direction: column;
   padding: 5px;
 }
@@ -398,7 +400,7 @@ font-size: 7rem;
   flex-direction: row;
   margin-top: 30px;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   list-style-type: none;
 }
 
@@ -418,7 +420,7 @@ font-size: 7rem;
 }
 
 /*Footer Navigation titles*/
-/*The footer--nav--titles class was unnecessary, I could've just put everything in it in the footer--navigation class.
+/*The footer--nav--titles div class was unnecessary, I could've just put everything in it in the footer--navigation div class.
 I added footer--nav--titles when I was experimenting, but now I am unsure how to get rid of it without it ruining the layout of
 my footer*/
 .footer--nav--titles {
@@ -444,13 +446,33 @@ my footer*/
   font-size: 1rem;
 }
 
-
 .bottom--text--footer {
   display: flex;
   width: 100%;
   height: 20%;
-  background-color:crimson;
+  background-color:white;
 }
+
+.bottom--text--footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-right: 20px;
+  gap: 3rem;
+}
+
+.copyright--text {
+  font-family:'Segoe UI';
+  font-size: 1.3rem;
+  flex-grow: 1;
+  margin-top: 32px;
+}
+
+.footer--logo {
+  height: 80%;
+  margin-top: 2px;
+}
+
 
 
 /*Screen reader only, based on example shown in class*/
