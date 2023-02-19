@@ -102,11 +102,12 @@ font-size: 7rem;
 
 /*Ratings Section*/
 
-.Ratings--section {
+.Ratings--Section {
   display: flex;
   width: 100%;
-  height: 625px;
+  height: 650px;
   background-color:red;
+  flex-direction: column;
 }
 
 .sr-only {
