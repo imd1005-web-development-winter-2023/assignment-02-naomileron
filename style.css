@@ -110,22 +110,48 @@ font-size: 7rem;
   flex-direction: column;
 }
 
+.Rating--Section--h2 {
+  display:flex;
+  margin-top: 30px;
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 4rem;
+}
 .ratings{
   display: flex;
   margin-top: 70px;
   width: 100%;
   height:60%;
-  background-color:aqua;
+  background-color:darkgreen;
   list-style-type: none;
 }
 
 .ratings ul {
   display: flex;
   justify-content:space-around;
+  flex-direction: row;
   gap: 3rem;
   list-style-type: none;
 }
 
+.ratings ul li {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  color: white;
+  font-family:'Segoe UI';
+}
+
+/*Watch Section*/
+
+.watch--section {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-color: blue;
+}
+
+/*Screen reader only, based on example shown in class*/
 .sr-only {
   position: absolute;
   width: 1px;
