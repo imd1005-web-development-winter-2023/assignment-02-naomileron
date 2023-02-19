@@ -366,6 +366,13 @@ font-size: 7rem;
   height: 100%;
 }
 
+.card--text {
+  font-family:'Segoe UI';
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
 
 /*Footer*/
 
