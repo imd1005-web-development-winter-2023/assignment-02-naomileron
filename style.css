@@ -225,3 +225,7 @@ font-size: 7rem;
   white-space: nowrap;
   border-width: 0;
 }
+
+.clear {
+  clear: both;
+}
