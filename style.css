@@ -212,7 +212,7 @@ font-size: 7rem;
   flex-direction: column;
 }
 
-.White--title {
+.Watch--Section--h2 {
   display: flex;
   margin-top: 30px;
   margin-left: 30px;
@@ -369,8 +369,7 @@ font-size: 7rem;
 .card--text {
   font-family:'Segoe UI';
   font-size: 2rem;
-  font-weight: lighter;
-  margin-top: 5px;
+  font-weight:lighter;
 }
 
 
