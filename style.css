@@ -1,3 +1,8 @@
+/* Thanks for all the feedback from assignment 01! Specifically, I think I would definitely change the creativity in my section designs,
+the only reason I haven't really done that here is because the alternate designs I came up with were very complex and I'm not quite 
+sure how to code them yet. One thing I was able to do though, make use of more of the vertical spacing, and make the buttons/text 
+easier to read. */
+
 /*Navigation Bar*/
 .container {
   max-width: 100%;
@@ -201,8 +206,9 @@ font-size: 7rem;
 .watch--section {
   display: flex;
   width: 100%;
-  height: 700px;
+  height: 750px;
   background-color: blue;
+  flex-direction: column;
 }
 
 .Watch--Section--h2 {
