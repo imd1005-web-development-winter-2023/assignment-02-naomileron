@@ -119,6 +119,13 @@ font-size: 7rem;
   list-style-type: none;
 }
 
+.ratings ul {
+  display: flex;
+  justify-content:space-around;
+  gap: 3rem;
+  list-style-type: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
