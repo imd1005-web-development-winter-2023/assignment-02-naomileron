@@ -107,7 +107,7 @@ margin-left: 20px;
   width: 100%;
   height: 660px;
   /*max-height: 700px;*/
-  background-image: url('./images/Hero\ Section\ Image.png');
+  background-image: url('./images/Hero-Section-Image.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
@@ -320,7 +320,7 @@ letter-spacing: 0.3rem;
   display: flex;
   width: 100%;
   height: 750px;
-  background-image: url('./images/Behind\ the\ Scenes.png');
+  background-image: url('./images/Behind-the-Scenes.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -361,7 +361,7 @@ letter-spacing: 0.3rem;
   display: flex;
   width: 100%;
   height: 850px;
-  background-image: url('./images/Wednesday\ and\ Enid.png');
+  background-image: url('./images/Wednesday-and-Enid.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
