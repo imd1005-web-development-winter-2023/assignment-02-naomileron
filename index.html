@@ -2,7 +2,7 @@
 <html lang="en-ca">
   <head>
     <!-- Set the page title -->
-    <title>Assignment 02</title>
+    <title>Wensight</title>
 
     <!-- Set the charset we're using to UTF-8 -->
     <meta charset="UTF-8" />
@@ -20,10 +20,306 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--
+    <!--Content within a section are all in their own divs so that I can align them according to their personal boxes-->
+    <!--Added the a tags on the buttons by mistake, but now when I try to get rid of them, it messes up the alignment. Not sure how to fix that-->
 
-      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+    <!--Navigation Menu-->
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="navigation">
+            <h2 class="sr-only">Site Header</h2>
 
-    -->
-  </body>
-</html>
+            <!--Logo-->
+            <img
+              class="header--navigation--logo"
+              src="./images/Wensight-Logo.png"
+              height="80"
+              alt="Company Logo"
+              />
+
+              <!--Search Bar-->
+            <form class="search--bar" >
+              <input
+              name="search--products" 
+              id="search--products"
+              type="text" 
+              placeholder="Search Products">
+              <button type="submit">
+                <img 
+                src="./images/Search-icon.png"
+                alt="Search button icon"
+                height="50">
+              </button>
+            </form>
+           
+            <!--Navigation Menu items-->
+            <nav class="header--navigation--list">
+              <ul>
+                <li>
+                  <a href="">News</a>
+                </li>
+                <li>
+                  <a href="">Watch</a>
+                </li>
+                <li>
+                  <a href="">Shop</a>
+                </li>
+                <li>
+                  <a href="">Quizzes and Features</a>
+                </li>
+                <li>
+                  <a href="">Help</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End of Navigation Menu-->
+
+    <!--Start of main cite content-->
+      <main>
+        <!--Hero Section-->
+        <section>
+          <div class="Hero--Section">
+            <div class="Hero--text">
+              <h2 class="sr-only">Hero Section</h2>
+                <!--Site Title-->
+                <h1 class="Uppercase">Wensight</h1>
+                <!--Site Title subtitle-->
+                <p class="Supporting">A website full of woe</p>
+                <!--Button to learn more about Wensight-->
+                <button class="white--button">Learn more</button>
+            </div>
+          </div>
+        </section>
+    <!--End of Hero Section-->
+
+    <!--Content Section: Ratings-->
+        <section>
+          <div class="Ratings--Section">
+            <h2 class="Black--title">Here's what people are saying</h2>
+            <!--Unordered list of the same reviews I included in assignment one-->
+            <div class="ratings">
+              <ul>
+                  <li class="rating--bubble"><blockquote>"I just finished it, and it is really, really good, undoubtedly the best new Series on Netflix. I have to watch it again"</blockquote></li>
+                  <li class="rating--bubble"><blockquote>"Jenna Ortega shines as the oldest Addams' daughter, it's almost as if she was born to play the child of woe."</blockquote></li>                
+                  <li class="rating--bubble"><blockquote>" Wednesday might be one of the greatest shows I have ever watched. It is incredibly amazing."</blockquote></li>
+              </ul>
+            </div>
+            <!--Button to see more ratings/leave users' own rating/chat with others-->
+            <div class="ratings--bottom">
+              <p class="ratings--info">Leave your own review, chat with others, and more</p>
+              <button class="black--button">See more</button>
+            </div>
+          </div>
+        </section>
+    <!--End of Content Section: Ratings-->
+
+    <!--Content Section: Watch-->
+        <section>
+          <h2 class="sr-only">Section explains that you can access Wednesday and more Addams family content from the cite</h2>
+            <div class="watch--section">
+              <h2 class= "White--title">Watch Wednesday and more...</h2>  
+              <!--Poster Images. Set into an unordered list-->          
+                <div class="Posters">
+                  <ul>
+                    <li>
+                      <img 
+                      class="Media--poster"
+                      src="./images/Addams-Family-1964.png" alt="Addams Family 1964 Poster">
+                    </li>
+                    <li>
+                      <img 
+                      class="Media--poster"
+                      src="./images/Wednesday-Poster.png" alt="Wednesday Poster">
+                    </li>
+                    <li>
+                      <img 
+                      class="Media--poster"
+                      src="./images/Addams-Family-1991.png" alt="Addams Family">
+                    </li>
+                  </ul>
+                </div> 
+                <!--Button to sign into/sign up for Netflix-->
+                <div class="watch--bottom"> 
+                    <button class="white--button">View all</button>
+                </div>
+            </div>
+        </section>
+      <!--End of content section: watch-->
+
+    <!--Content Section: Behind the Scenes-->    
+        <section>
+          <h2 class="sr-only">Behind the scenes section</h2>
+            <div class="bts-section">
+              <div class="bts-text">
+                  <h2 class="bts--title">Go behind the scenes</h2>
+                  <p class="subtitle">Learn about the team, crew, actors and all their hard work that brought Wednesday to death</p>
+                  <div class="center--button--alignment">
+                    <button class="white--button">See more</button>
+                  </div>
+              </div>
+            </div>
+        </section>
+    <!--End of Content Section: Behind the Scenes-->
+
+    <!--Content Section: Quizzes-->
+        <section>
+          <h2 class="sr-only">Wednesday related quiz section</h2>
+            <div class="quizzes-section">
+              <div class="quizzes-text">
+                <h2 class="quiz-title">Which character are you?</h2>
+                <p class="subtitle">Find out this and more with our quizzes</p>
+                <div class="center--button--alignment">
+                  <button class="white--button">Go to Quizzes</button>
+                </div>
+              </div>
+            </div>
+        </section>
+    <!--End of Content Section: Quizzes-->
+    
+    <!--Content Section: Store--> 
+      <section>
+        <h2 class="sr-only">Store</h2>
+          <div class="store">
+            <h2 class="Shop--title">Visit our woeful shop</h2>
+            <!--Store Cards. Separate unordered lists that contatin the product image and product name-->
+            <div class="cards--section">
+              <ul>
+                <li>
+                  <img
+                  class="card--image"
+                  src="./images/sweater.png"
+                  alt="Sweater with Wendesday on it">
+                </li>
+                <li class="card--text">Clothes</li>
+              </ul>
+              <ul>
+                <li>
+                  <img
+                  class="card--image"
+                  src="./images/Bag.png"
+                  alt="Hand bag that says what would Wednesday do">
+                </li>
+                <li class="card--text">Accessories</li>
+              </ul>
+              <ul>
+                <li>
+                  <img
+                  class="card--image"
+                  src="./images/Wednesday-Pop.png"
+                  alt="Wednesday Addams funko pop">
+                </li>
+                <li class="card--text">Collectibles</li>
+              </ul>
+            </div>
+            <!--Button to see the rest of the store. Uses a different class than the other white buttons because the top-margin is different-->
+            <div class= shop--bottom>
+                <button class="Exception--white--button">See More</button>
+            </div>
+          </div>
+      </section>
+    <!--End of Content Section: Store--> 
+      </main>
+    <!--End of main cite content-->
+
+      <!--Footer-->
+      <footer>
+        <h2 class="sr-only">Site Footer</h2>
+          <div class="footer">
+            <div class="footer--content">
+              <!--Social Media Icons-->
+              <div class="socials">
+                <ul>
+                  <li>
+                    <img
+                    class="icons"
+                    src="./images/Instagram.png"
+                    alt="Instagram Icon">
+                  </li>
+                  <li>
+                    <img
+                    class="icons"
+                    src="./images/twitter-logo-black-and-white.png"
+                    alt="Twitter Icon">
+                  </li>
+                  <li>
+                    <img
+                    class="icons"
+                    src="./images/YouTube.png"
+                    alt="YouTube Icon">
+                  </li>
+                  <li>
+                    <img
+                    class="icons"
+                    src="./images/Pinterest.png"
+                    alt="Pinterest Icon">
+                  </li>
+                  <li>
+                    <img
+                    class="icons"
+                    src="./images/Facebook.png"
+                    alt="Pinterest Icon">
+                  </li>
+                </ul>
+              </div>
+              <!--Footer Navigation Lists-->
+              <div class="footer--navigation">
+                <div class="footer--nav--titles">
+                  <ul>
+                    <li class="nav--title">News</li>
+                    <li class="nav--content">Season 2</li>
+                    <li class="nav--content">Latest</li>
+                    <li class="nav--content">Articles</li>
+                  </ul>
+                  <ul>
+                    <li class="nav--title">Watch</li>
+                    <li class="nav--content">Sign in to Netflix</li>
+                    <li class="nav--content">Sign up for Netflix</li>
+                    <li class="nav--content">Stream with others</li>
+                  </ul>
+                  <ul>
+                    <li class="nav--title">Shop</li>
+                    <li class="nav--content">Clothes</li>
+                    <li class="nav--content">Accessories</li>
+                    <li class="nav--content">Collectibles</li> 
+                  </ul>  
+                  <ul>
+                    <li class="nav--title">Quizzes and Features</li>
+                    <li class="nav--content">Quizzes</li>
+                    <li class="nav--content">Chat</li>  
+                    <li class="nav--content">Leave a review</li>  
+                  </ul>
+                  <ul>
+                    <li class="nav--title">Help</li>
+                    <li class="nav--content">FAQs</li>
+                    <li class="nav--content">Contact us</li>  
+                    <li class="nav--content">Report</li>
+                  </ul>                  
+                </div>
+              </div>
+              <!--Year, copyright symbol and logos-->
+              <div class="bottom--text--footer">
+                <ul>
+                  <li class="copyright--text">&copy; 2023 Netflix </li>
+                  <li>
+                    <img class="footer--logo"
+                    src="./images/Wensight-Logo.png"
+                    alt="Company Logo">
+                  </li>
+                  <li>
+                    <img class="footer--logo"
+                    src="./images/Netflix.png"
+                    alt="Netflix Logo">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </footer>
+      <!--End of footer-->
+    </body>
+  </html>

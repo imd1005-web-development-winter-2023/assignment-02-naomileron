@@ -1,3 +1,647 @@
-/*
-  CSS File
-*/
+/* Thanks for all the feedback from assignment 01! Specifically, I think I would definitely change the creativity in my section designs,
+the only reason I haven't really done that here is because the alternate designs I came up with were very complex and I'm not quite 
+sure how to code them yet. One thing I was able to do though, make use of more of the vertical spacing, and make the buttons/text 
+easier to read. */
+
+/*commented out colours are what I used to see what a box looked like so I could more easily align/place content*/
+
+/*Navigation Bar*/
+.container {
+  max-width: 100%;
+  margin: 0px;
+  margin-right: 5px;
+}
+
+.header{
+  background-color:black;
+  color: white;
+}
+
+.navigation {
+  margin: 0px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*logo*/
+.header--navigation--logo {
+display: flex;
+justify-content: flex-start;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+/*Search Bar shape*/
+.search--bar {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 40px;
+  background: white;
+  border-radius:50px;
+  padding:5px;
+}
+
+/*Hides/changes default appearance of an input box*/
+.search--bar input {
+  background: transparent;
+  flex-grow: 1;
+  border: 0;
+  outline: none;
+  margin-left: 10px;
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  color:black;
+}
+
+/*changes placeholder text to black instead of default*/
+::placeholder {
+  color:black;
+}
+
+/*Hides/changes default appearance of an image button*/
+.search--bar button img {
+ height: 30px;
+}
+
+.search--bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  background-color: black;
+  cursor: pointer;
+}
+
+/*Adds hover sand clicked states for search button*/
+.search--bar button:hover {
+  background-color: rgb(37,37,37);
+  transform: scale(1.01);
+}
+
+.search--bar button:active {
+  transform: scale(0.95);
+  background: rgb(23,23,23);
+}
+
+/*Navigation Titles*/
+.header--navigation--list ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header--navigation--list ul li a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-decoration: none;
+  font-family: 'Gill Sans';
+}
+
+/*hover state for navigation*/
+.header--navigation--list ul li a:hover {
+  text-decoration: underline;
+  color: lightgrey;
+}
+/*End of Navigation Bar*/
+
+/*Hero Section*/
+.Hero--Section {
+  width: 100%;
+  height: 660px;
+  /*max-height: 700px;*/
+  background-image: url('./images/Hero-Section-Image.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+
+/*Box for the text*/
+.Hero--text {
+  display: flex;
+  width:50%;
+  height:650px;
+  margin-left: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Cite title*/
+.Uppercase {
+font-family: Georgia;
+text-transform: uppercase;
+font-size: 7rem;
+letter-spacing: 0.3rem;
+}
+
+/*Cite title supporting text*/
+.Supporting {
+  font-family:'Segoe UI';
+  font-weight:lighter;
+  font-size: 3rem;
+}
+
+/*This will be used for all white buttons*/
+.white--button {
+  margin-top: 30px;
+  height: 70px;
+  width: 260px;
+  border: 0;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+  font-family:'Segoe UI';
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/*End of Hero Section*/
+
+/*Ratings Section*/
+.Ratings--Section {
+  display: flex;
+  width: 100%;
+  height: 750px;
+  /*background-color:red;*/
+  flex-direction: column;
+}
+
+/*This will be used for all black titles in the sections*/
+.Black--title {
+  display:flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 4rem;
+}
+
+/*box for ratings*/
+.ratings{
+  display: flex;
+  width: 100%;
+  height:50%;
+  /*background-color:darkgreen;*/
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+/*Separates each rating into their own space*/
+.ratings ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  list-style-type: none;
+  text-align: center;
+}
+
+.ratings ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: white;
+  font-family:'Segoe UI';
+  text-align: center;
+}
+
+/*Creates the bubbles for each of the ratings*/
+.rating--bubble {
+  display:flex;
+  height: 95%;
+  width: 400px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: black;
+  font-size: 1.5rem;
+  border-radius: 60px;
+}
+
+/*This will be used for all black buttons*/
+.black--button {
+  margin-top: 30px;
+  height: 70px;
+  width: 260px;
+  border: 0;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  font-family:'Segoe UI';
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/*Content under the ratings*/
+.ratings--bottom {
+  display:flex;
+  height:30%;
+  /*background-color:red;*/
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top:10px;
+  padding-bottom: 50px;
+}
+
+.ratings--info {
+  font-family:'Segoe UI';
+  font-weight:lighter;
+  font-size: 2.5rem;
+}
+/*End of Ratings Section*/
+
+/*Watch Section*/
+.watch--section {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  background-color: black;
+  flex-direction: column;
+}
+
+.White--title {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 4rem;
+  color: white
+}
+
+/*Posters box*/
+.Posters {
+  display:flex;
+  width: 100%;
+  height: 60%;
+  /*background-color: red;*/
+  padding-left: 30px;
+  padding-right: 70px;
+  padding-top: 35px;
+  padding-bottom: 3px;
+}
+
+.Posters ul {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+  list-style-type: none;
+}
+
+/*Makes every poster have the same apperance size and edge wise. Prior to addinf this, they were different sizes*/
+.Media--poster {
+  display: flex;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+/*Content under the movie posters' box*/
+.watch--bottom {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  /*background-color: green;*/
+  padding-left: 30px;
+  padding-top: 20px;
+}
+/*End of Watch Section*/
+
+
+/*Behind the Scenes Section*/
+
+/*Background image/container for the bts section*/
+.bts-section {
+  display: flex;
+  width: 100%;
+  height: 750px;
+  background-image: url('./images/Behind-the-Scenes.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*Bts Section content*/
+.bts-text {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin: auto auto;
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.bts--title {
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 4rem;
+  color: white
+}
+
+.subtitle {
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: white
+}
+
+/*End of Behind the Scenes Section*/
+
+/*Quizzes Section*/
+
+/*Background image/container for the quizzes section*/
+.quizzes-section {
+  display: flex;
+  width: 100%;
+  height: 850px;
+  background-image: url('./images/Wednesday-and-Enid.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*Quizzes Section content*/
+.quizzes-text {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin: auto auto;
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.quiz-title {
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 4rem;
+  color: white
+}
+/*End of Quizzes Section*/
+
+/*Store Section*/
+.store {
+  display: flex;
+  width: 100%;
+  height:750px;
+  background-color: black;
+  flex-direction: column;
+}
+
+.Shop--title {
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 4rem;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/*cards box*/
+.cards--section {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  /*background-color: green;*/
+  gap: 0.9rem;
+}
+
+/*The white part of the card*/
+.cards--section ul {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  margin-right: 90px;
+  margin-left: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+}
+
+/*Card content*/
+.cards--section ul li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.card--image {
+  height: 100%;
+}
+
+.card--text {
+  font-family:'Segoe UI';
+  font-size: 2rem;
+  font-weight:lighter;
+}
+
+/*Content underneath the cards' box*/
+.shop--bottom {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  /*background-color:purple;*/
+  padding-left: 20px;
+}
+
+.Exception--white--button {
+  margin-top: 15px;
+  height: 70px;
+  width: 260px;
+  border: 0;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+  font-family:'Segoe UI';
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/*End of Store Section*/
+
+/*Footer*/
+
+/*Entire footer*/
+.footer {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-color: white;  
+  padding-left: 40px;
+  padding-right: 65px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+/*Box that contains all footer content*/
+.footer--content {
+  display: flex;
+  width: 90%;
+  height: 98%;
+  background-color: black;
+  flex-direction: column;
+  padding: 5px;
+}
+
+/*Social Media Icons*/
+.socials {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+}
+
+.socials ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 3rem;
+  list-style-type: none;
+}
+
+.icons {
+  display: flex;
+  height: 65%;
+}
+
+.footer--navigation {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  background-color:white;
+  padding: 40px;
+  padding-top: 0;
+  flex-direction: column;
+}
+
+/*Footer Navigation titles*/
+/*The footer--nav--titles div class was unnecessary, I could've just put everything in it in the footer--navigation div class.
+I added footer--nav--titles when I was experimenting, but now I am unsure how to get rid of it without it ruining the layout of
+my footer*/
+.footer--nav--titles {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color:white;
+  align-items: center;
+  justify-content: center;
+  gap:5rem;
+}
+
+.nav--title {
+  list-style-type: none;
+  font-family:'Segoe UI';
+  font-size: 1.5rem;
+}
+
+.nav--content {
+  list-style-type: none;
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+/*Copyright text and logos*/
+.bottom--text--footer {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  background-color:white;
+}
+
+.bottom--text--footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-right: 20px;
+  gap: 3rem;
+}
+
+.copyright--text {
+  font-family:'Segoe UI';
+  font-size: 1.3rem;
+  flex-grow: 1;
+  margin-top: 32px;
+}
+
+.footer--logo {
+  height: 80%;
+  margin-top: 2px;
+}
+/*End of Footer*/
+
+/*Button Effects*/
+
+/*Changes colour and size when hovered over*/
+.white--button:hover {
+  background: lightgray;
+  transform: scale(1.1);
+}
+.Exception--white--button:hover {
+  background: lightgray;
+  transform: scale(1.1);
+}
+.black--button:hover {
+  background: rgb(37,37,37);
+  transform: scale(1.1);
+}
+
+/*Changes colour and size when clicked on*/
+.white--button:active {
+  transform: scale(0.99);
+  background: rgb(88, 88, 88);
+}
+
+.Exception--white--button:active {
+  transform: scale(0.99);
+  background: rgb(88, 88, 88);
+}
+
+.black--button:active {
+  transform: scale(0.99);
+  background: rgb(23,23,23);
+}
+/*Learned these animations from: https://www.youtube.com/watch?v=dl40SEySJ1s*/
+
+/*End of button Effects*/
+
+/*Screen reader only, based on example shown in class*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
