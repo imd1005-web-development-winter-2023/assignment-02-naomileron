@@ -116,6 +116,7 @@ margin-left: 20px;
 font-family: Georgia;
 text-transform: uppercase;
 font-size: 7rem;
+letter-spacing: 0.3rem;
 }
 
 .Supporting {
@@ -141,6 +142,7 @@ font-size: 7rem;
   border-radius: 40px;
   font-family:'Segoe UI';
   font-size: 1.7rem;
+  cursor: pointer;
 }
 
 .white--button a:hover {
@@ -222,6 +224,7 @@ font-size: 7rem;
   border-radius: 40px;
   font-family:'Segoe UI';
   font-size: 1.7rem;
+  cursor: pointer;
 }
 
 .ratings--bottom {
@@ -436,6 +439,7 @@ font-size: 7rem;
   border-radius: 40px;
   font-family:'Segoe UI';
   font-size: 1.7rem;
+  cursor: pointer;
 }
 
 /*Footer*/
