@@ -77,6 +77,17 @@ margin-left: 20px;
   cursor: pointer;
 }
 
+/*Adds hover sand clicked states for search button*/
+.search--bar button:hover {
+  background-color: rgb(37,37,37);
+  transform: scale(1.01);
+}
+
+.search--bar button:active {
+  transform: scale(0.95);
+  background: rgb(23,23,23);
+}
+
 /*Navigation Titles*/
 .header--navigation--list ul {
   display: flex;
