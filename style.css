@@ -149,6 +149,7 @@ letter-spacing: 0.3rem;
   font-family:'Segoe UI';
   font-size: 1.7rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 /*End of Hero Section*/
 
@@ -231,6 +232,7 @@ letter-spacing: 0.3rem;
   font-family:'Segoe UI';
   font-size: 1.7rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /*Content under the ratings*/
@@ -463,6 +465,7 @@ letter-spacing: 0.3rem;
   font-family:'Segoe UI';
   font-size: 1.7rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 /*End of Store Section*/
 
@@ -578,6 +581,41 @@ my footer*/
   margin-top: 2px;
 }
 /*End of Footer*/
+
+/*Button Effects*/
+
+/*Changes colour and size when hovered over*/
+.white--button:hover {
+  background: lightgray;
+  transform: scale(1.1);
+}
+.Exception--white--button:hover {
+  background: lightgray;
+  transform: scale(1.1);
+}
+.black--button:hover {
+  background: rgb(37,37,37);
+  transform: scale(1.1);
+}
+
+/*Changes colour and size when clicked on*/
+.white--button:active {
+  transform: scale(0.99);
+  background: rgb(88, 88, 88);
+}
+
+.Exception--white--button:active {
+  transform: scale(0.99);
+  background: rgb(88, 88, 88);
+}
+
+.black--button:active {
+  transform: scale(0.99);
+  background: rgb(23,23,23);
+}
+/*Learned these animations from: https://www.youtube.com/watch?v=dl40SEySJ1s*/
+
+/*End of button Effects*/
 
 /*Screen reader only, based on example shown in class*/
 .sr-only {
